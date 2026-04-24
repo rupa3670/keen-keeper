@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "name": "Sarah Jenkins",
+    "picture": "https://randomuser.me/api/portraits/women/32.jpg",
+    "email": "sarah.j@outlook.com",
+    "days_since_contact": 22,
+    "status": "overdue",
+    "tags": ["college", "hiking"],
+    "bio": "Met during freshman year. We used to go hiking every month, but we've lost touch recently.",
+    "goal": 14,
+    "next_due_date": "2026-04-10"
+  },
+  {
+    "id": 2,
+    "name": "Marcus Thorne",
+    "picture": "https://randomuser.me/api/portraits/men/44.jpg",
+    "email": "m.thorne@gmail.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["work", "tech"],
+    "bio": "Senior developer at a fintech startup. He's a great mentor for React and systems design.",
+    "goal": 30,
+    "next_due_date": "2026-05-19"
+  },
+  {
+    "id": 3,
+    "name": "Elena Rodriguez",
+    "picture": "https://randomuser.me/api/portraits/women/85.jpg",
+    "email": "elena.rod@lifestyle.com",
+    "days_since_contact": 6,
+    "status": "almost due",
+    "tags": ["neighbor", "yoga"],
+    "bio": "Lives two blocks away. We usually grab coffee after our Sunday morning yoga sessions.",
+    "goal": 7,
+    "next_due_date": "2026-04-23"
+  },
+  {
+    "id": 4,
+    "name": "David Kim",
+    "picture": "https://randomuser.me/api/portraits/men/22.jpg",
+    "email": "dkim_coding@fastmail.com",
+    "days_since_contact": 45,
+    "status": "overdue",
+    "tags": ["high school", "gaming"],
+    "bio": "Childhood best friend. We still jump on Discord occasionally to play strategy games.",
+    "goal": 30,
+    "next_due_date": "2026-03-08"
+  },
+  {
+    "id": 5,
+    "name": "Chloe Beaumont",
+    "picture": "https://randomuser.me/api/portraits/women/65.jpg",
+    "email": "chloe.b@icloud.com",
+    "days_since_contact": 1,
+    "status": "on-track",
+    "tags": ["art", "close friend"],
+    "bio": "A talented digital illustrator. We share design inspiration and UI trends almost daily.",
+    "goal": 3,
+    "next_due_date": "2026-04-26"
+  },
+  {
+    "id": 6,
+    "name": "Julian Vance",
+    "picture": "https://randomuser.me/api/portraits/men/11.jpg",
+    "email": "julian.v@university.edu",
+    "days_since_contact": 12,
+    "status": "almost due",
+    "tags": ["university", "basketball"],
+    "bio": "Played on the intramural basketball team together. Usually down for a quick shoot-around.",
+    "goal": 15,
+    "next_due_date": "2026-04-27"
+  },
+  {
+    "id": 7,
+    "name": "Sophie Chen",
+    "picture": "https://randomuser.me/api/portraits/women/12.jpg",
+    "email": "schen_designs@gmail.com",
+    "days_since_contact": 10,
+    "status": "on-track",
+    "tags": ["photography", "travel"],
+    "bio": "Travel photographer based in London. We met during a backpacking trip in Italy.",
+    "goal": 20,
+    "next_due_date": "2026-05-04"
+  },
+  {
+    "id": 8,
+    "name": "Alistair Cook",
+    "picture": "https://randomuser.me/api/portraits/men/52.jpg",
+    "email": "cook.alistair@hiking.net",
+    "days_since_contact": 60,
+    "status": "overdue",
+    "tags": ["networking", "career"],
+    "bio": "Met at a tech conference. He works in cybersecurity and has great industry insights.",
+    "goal": 45,
+    "next_due_date": "2026-03-01"
+  },
+  {
+    "id": 9,
+    "name": "Emily Watson",
+    "picture": "https://randomuser.me/api/portraits/women/25.jpg",
+    "email": "emily.w@freelance.com",
+    "days_since_contact": 4,
+    "status": "on-track",
+    "tags": ["creative", "writing"],
+    "bio": "A freelance journalist. We often meet at the local library to work on our own projects side by side.",
+    "goal": 10,
+    "next_due_date": "2026-04-30"
+  }
+]
