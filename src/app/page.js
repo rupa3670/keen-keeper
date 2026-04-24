@@ -1,4 +1,5 @@
 "use client";
+import Link from 'next/link';
 import { Plus } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
@@ -43,8 +44,9 @@ export default function Home() {
       <div className='max-w-7xl mx-auto px-4 md:px-10 lg:px-20 border-t border-gray-300  pt-10 '>
         <h3 className='text-2xl fond-bold mb-6'>Your Friends</h3>
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6'>
-          {friends.map((friend) =>
-            <div key={friend.id} className="bg-white shadow-sm border border-gray-100 rounded-[20px] p-6 flex flex-col items-center">
+          {friends.map((friend) =>(
+            <Link href={`/${friend.id}`} key={friend.id}>
+            <div  className="bg-white shadow-sm border border-gray-100 rounded-[20px] p-6 flex flex-col items-center">
              
                 <div className='mb-4'> <img
                   src={friend.picture}
@@ -65,7 +67,8 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          )};
+            </Link>
+         ) )};
         </div>
       </div>
     </div>

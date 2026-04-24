@@ -5,7 +5,7 @@ import { House, Clock4, ChartLine, Menu, } from 'lucide-react';
 const Navbar = () => {
   const navLinks = (
     <>
-      <li><Link href="" className='bg-[#244D3F] text-white hover:bg-[#68bea0]'><House size={18} />Home</Link></li>
+      <li><Link href="/" className='bg-[#244D3F] text-white hover:bg-[#68bea0]'><House size={18} />Home</Link></li>
       <li><Link href="/timeline"><Clock4 size={18} />Timeline</Link></li>
       <li><Link href="/stats"><ChartLine size={18} />Stats</Link></li>
     </>
@@ -26,7 +26,7 @@ const Navbar = () => {
 
 
         <div className=" navbar-end hidden lg:flex ">
-          <ul className="menu menu-horizontal   text-gray-500  font-medium">
+          <ul className="menu menu-horizontal gap-3   text-gray-500  font-medium">
             {navLinks}
           </ul>
         </div>
