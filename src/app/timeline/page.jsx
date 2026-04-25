@@ -18,7 +18,7 @@ const TimelinePage = () => {
       <div className='min-h-screen bg-gray-100 py-12 px-4' >
         <div className='max-w-3xl mx-auto'>
            
-             <h1 className='text-4xl font-bold text-gray-900 mb-5'>TimeLine</h1>
+             <h1 className=' text-2xl md:text-4xl font-bold text-gray-900 mb-5'>TimeLine</h1>
             <button className='text-sm border border-gray-200 shadow-sm py-2 px-8 rounded-sm font-medium flex text-gray-500 mb-5'>Filter Timeline</button>
            
             {/* <div className='mb-4 flex flex-col md:flex-row md:items-center justify-between gap-4  bg-white rounded-[5px] p-6 shadow-sm border-gray-100 min-h-14 '> */}

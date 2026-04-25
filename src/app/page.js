@@ -3,13 +3,16 @@ import Link from 'next/link';
 import { Plus } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
-
-export default function Home() {
+const Home=()=>
+ {
   const [friends, setFriends] = useState([]);
+  const[loading,setLoading]=useState(true);
   useEffect(() => {
     fetch('/friends.json')
       .then((res) => res.json())
-      .then((data) => setFriends(data))
+      .then((data) =>{ setFriends(data);
+      setLoading(false);
+      })
   }, []);
   const totalFriends = friends.length;
   const onTrack = friends.filter(f => f.status === "on-track").length;
@@ -43,6 +46,11 @@ export default function Home() {
       </div>
       <div className='max-w-7xl mx-auto px-4 md:px-10 lg:px-20 border-t border-gray-300  pt-10 '>
         <h3 className='text-2xl fond-bold mb-6'>Your Friends</h3>
+        {loading?(
+          <div className='flex justify-center items-center py-20'>
+            <span className="loading loading-spinner loading-lg"></span>
+          </div>
+        ):(
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6'>
           {friends.map((friend) =>(
             <Link href={`/${friend.id}`} key={friend.id}>
@@ -70,6 +78,7 @@ export default function Home() {
             </Link>
          ) )};
         </div>
+        )}
       </div>
     </div>
 
@@ -79,4 +88,5 @@ export default function Home() {
 
     </>
   );
-}
+ };
+ export default Home;
