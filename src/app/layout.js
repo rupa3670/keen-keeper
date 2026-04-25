@@ -1,6 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/shared/Navbar";
+import Navbar from "@/components/shared/navbar/Navbar";
 import Footer from "@/components/shared/Footer";
 import { useContext } from "react";
 import { TimelineProvider } from "@/context/TimelineContext";
