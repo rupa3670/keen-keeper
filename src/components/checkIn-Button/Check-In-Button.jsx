@@ -10,11 +10,7 @@ const CheckInButton = ({friendName}) => {
 
     const handleAction =(type) =>{
         addEvents(type,friendName);
-        toast.success(`${type} with ${friendName} logged!`,{
-            position:"bottom-right",
-            autoClose: 2000,
-            theme:"colored"
-        });
+        toast.success(`${type} with ${friendName} logged!`);
     };
     return (
         <>
