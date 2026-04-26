@@ -1,11 +1,9 @@
 <h1 className='text-3xl font-bold'>Keen<span className='text-green-950'>Keeper</span></h1>
 <br>
-<br>
 <p className=''>Never lost touch with the people who matter most.<br> Log interactions, set contact goals, and stay connected  effortlessly</p>
 <br>
 <br>
 <h4>Use Technology</h4>
-<br>
 1.Next.js
 <br>
 2.React
