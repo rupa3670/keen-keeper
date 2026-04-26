@@ -26,7 +26,7 @@
   
 
 
-<h2 className='font-bold text-xl'>Key Features<h2>
+<h2 >Key Features<h2>
 
  1.Smart Friend Dashboard:Live status badges show who needs your attention. on Track, Almost Due, or Overdue
  <br>
