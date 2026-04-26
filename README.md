@@ -1,3 +1,4 @@
+import { LayoutDashboard,UserCheck,ChartPie } from 'lucide-react';
 <h1 className='text-3xl font-bold'>Keen<span className='text-green-950'>Keeper</span></h1>
 
 <p className=''>Never lost touch with the people who matter most.<br> Log interactions, set contact goals, and stay connected  effortlessly</p>
@@ -27,14 +28,9 @@
 
 
 <h2 >Key Features<h2>
-
- 1.Smart Friend Dashboard:Live status badges show who needs your attention. on Track, Almost Due, or Overdue
- <br>
- 2.Interaction Timeline:A full log of every call, text, and video filterable by type
- <br>
- 3.Friendship Analytics:Real-time pie chart showing your interaction breakdown by type
- <br>
- 4.Friend Detail Page: Individual profiles with contact stats and a one-click check in button
-
+<li> <LayoutDashboard size={20} className="text-blue-500"/>Smart Friend Dashboard:Live status badges show who needs your attention. on Track, Almost Due, or Overdue</li>
+<li><UserCheck size={20} className="text-green-500"/>Interaction Timeline:A full log of every call, text, and video filterable by type</li>
+<li> <ChartPie size={20} className="text-purple-500"/>Friendship Analytics:Real-time pie chart showing your interaction breakdown by type</li>
+ 
 
 
