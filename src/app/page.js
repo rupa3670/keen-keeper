@@ -12,7 +12,7 @@ const Home=()=>
       .then((res) => res.json())
       .then((data) =>{ setFriends(data);
       setLoading(false);
-      })
+      },2000)
   }, []);
   const totalFriends = friends.length;
   const onTrack = friends.filter(f => f.status === "on-track").length;

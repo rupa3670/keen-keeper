@@ -2,13 +2,14 @@ import React from 'react';
 import Link from 'next/link';
 import {BellDot, Archive,Trash2 } from 'lucide-react'
 import CheckInButton from '@/components/checkIn-Button/Check-In-Button';
+import { notFound } from 'next/navigation';
 const AppDetailsPage =async ({params}) => {
     const {id}=await params;
     const res= await fetch("http://localhost:3000/friends.json");
     const friends =await res.json();
     const friend =friends.find(f=>f.id.toString()===id);
     if(!friend){
-        return <div className='p-20 text-center'>Friend not found!</div>
+        notFound();
     }
     return (
        <div className='min-h-screen bg-gray-50 py-10 px-4'>
@@ -26,8 +27,8 @@ const AppDetailsPage =async ({params}) => {
                 ))}
 
             </div>
-            <p className='text-gray-400 text-sm italic mt-6 font-semibold'>Formal colleague, great mentor</p>
-            <p className='text-gray-400 text-xs font-semibold mt-1'>Preferred: email</p>
+            <p className='text-gray-400 text-sm italic mt-6 font-semibold'>{friend.bio}</p>
+            <p className='text-gray-400 text-xs font-semibold mt-1'>{friend.email}</p>
             </div>
             <div className='grid grid-cols-1 gap-2'>
                 <button className='flex items-center justify-center gap-2 py-3 bg-white border border-gray-100 rounded-xl text-sm font-bold text-gray-500 hover:bg-gray-50 transition-colors'> <BellDot size={16}/> Snooze 2 weeks</button>
@@ -45,12 +46,12 @@ const AppDetailsPage =async ({params}) => {
 
                 </div>
                 <div className='bg-white p-6 rounded-[20px] border border-gray-100 text-center shadow-sm'>
-                    <h3 className='text-2xl font-bold text-gray-600'>30</h3>
+                    <h3 className='text-2xl font-bold text-gray-600'>{friend.goal}</h3>
                     <p className=' font-bold text-[10px] text-gray-400 uppercase tracking-wider mt-2'>Goal (Days)</p>
 
                 </div>
                 <div className='bg-white p-6 rounded-[20px] border border-gray-100 text-center shadow-sm'>
-                    <h3 className='text-2xl font-bold text-gray-600'>Feb 27, 2026 </h3>
+                    <h3 className='text-2xl font-bold text-gray-600'>{friend.next_due_date} </h3>
                     <p className=' font-bold text-[10px] text-gray-400 uppercase tracking-wider mt-2'>Next Due</p>
 
                 </div>

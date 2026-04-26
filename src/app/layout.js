@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
       <body className="min-h-full flex flex-col bg-gray-100">
        <TimelineProvider>
          <Navbar/>
-        {children}
+       <main className="flex-1"> {children}</main>
         <Footer/>
         <ToastContainer/>
          </TimelineProvider>

@@ -14,7 +14,7 @@ const TimelinePage = () => {
     const filteredEvents = filter === "All" ? events : events.filter(event => event.type === filter);
 
     return (
-        <div className='min-h-screen bg-gray-100 py-12 px-4' >
+        <div className=' bg-gray-100 py-12 px-4' >
             <div className='max-w-3xl mx-auto'>
 
                 <h1 className=' text-2xl md:text-4xl font-bold text-gray-900 mb-5'>TimeLine</h1>
@@ -27,7 +27,7 @@ const TimelinePage = () => {
                         {Filters.map((f)=>(
                             <li key={f}>
                                 <button onClick={()=>setFilter(f)}
-                                className={filter === f?'bg-[#24D#F] text-white':''}>{f}</button>
+                                className={filter === f?'bg-[#244D3F] text-white':''}>{f}</button>
                                 
                             </li>
                         )) }
