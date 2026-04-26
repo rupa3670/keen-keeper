@@ -28,10 +28,13 @@
 
 <h2 className='font-bold text-xl'>Key Features<h2>
 
-<li> Smart Friend Dashboard:Live status badges show who needs your attention. on Track, Almost Due, or Overdue</li>
-<li> Interaction Timeline:A full log of every call, text, and video filterable by type</li>
-<li > Friendship Analytics:Real-time pie chart showing your interaction breakdown by type</li>
-<li> Friend Detail Page: Individual profiles with contact stats and a one-click check in button</li>
+ 1.Smart Friend Dashboard:Live status badges show who needs your attention. on Track, Almost Due, or Overdue
+ <br>
+ 2.Interaction Timeline:A full log of every call, text, and video filterable by type
+ <br>
+ 3.Friendship Analytics:Real-time pie chart showing your interaction breakdown by type
+ <br>
+ 4.Friend Detail Page: Individual profiles with contact stats and a one-click check in button
 
 
 
