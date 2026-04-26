@@ -3,16 +3,22 @@ import Link from 'next/link';
 import {BellDot, Archive,Trash2 } from 'lucide-react'
 import CheckInButton from '@/components/checkIn-Button/Check-In-Button';
 import { notFound } from 'next/navigation';
+import Footer from '@/components/shared/Footer';
+import Navbar from '@/components/shared/navbar/Navbar';
+import friendsData from '@/../public/friends.json';
+
 const AppDetailsPage =async ({params}) => {
-    const {id}=await params;
-    const res= await fetch("http://localhost:3000/friends.json");
-    const friends =await res.json();
-    const friend =friends.find(f=>f.id.toString()===id);
+     const {id}=await params;
+    // const res= await fetch("http://localhost:3000/friends.json");
+    // const friends =await res.json();
+    const friend =friendsData.find(f=>f.id.toString()===id.toString());
     if(!friend){
         notFound();
     }
     return (
-       <div className='min-h-screen bg-gray-50 py-10 px-4'>
+        <>
+        <Navbar/>
+       <div className=' bg-gray-50 py-10 px-4'>
         <main className='max-w-5xl mx-auto'>
             
          <div className='grid grid-cols-1 lg:grid-cols-3 gap-6'>
@@ -76,6 +82,8 @@ const AppDetailsPage =async ({params}) => {
         </main>
 
        </div>
+       <Footer/>
+       </>
     );
 };
 

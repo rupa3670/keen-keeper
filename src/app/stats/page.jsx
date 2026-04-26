@@ -1,4 +1,6 @@
 "use client"
+import Footer from '@/components/shared/Footer';
+import Navbar from '@/components/shared/navbar/Navbar';
 import { useTimeline } from '@/context/TimelineContext';
 import React from 'react';
 
@@ -19,6 +21,8 @@ const StatePage = () => {
   
 ].filter(item=> item.value>0);
     return (
+      <>
+      <Navbar/>
         <div className=' my-10 shadow-p-10 rounded-md container mx-auto border border-slate-300'>
             <h2 className='text-3xl font-bold text-[#355E3B] text-center mb-5'>By Interaction Type</h2>
 {events.length===0 ?(
@@ -39,6 +43,7 @@ const StatePage = () => {
        
       />
       <Legend/>
+
       <Tooltip/>
     </PieChart>)}
             
@@ -46,6 +51,9 @@ const StatePage = () => {
 
            
         </div>
+        <Footer/>
+        </>
+
     );
 };
 

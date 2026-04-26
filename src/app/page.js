@@ -2,6 +2,8 @@
 import Link from 'next/link';
 import { Plus } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import Navbar from '@/components/shared/navbar/Navbar';
+import Footer from '@/components/shared/Footer';
 
 const Home=()=>
  {
@@ -12,13 +14,14 @@ const Home=()=>
       .then((res) => res.json())
       .then((data) =>{ setFriends(data);
       setLoading(false);
-      },2000)
+      },1500)
   }, []);
   const totalFriends = friends.length;
   const onTrack = friends.filter(f => f.status === "on-track").length;
   const needAttention = friends.filter(f => f.status === "overdue" || f.status === "almost due").length;
   return (
     <>
+    <Navbar/>
     <div className='min-h-screen bg-gray-50 pb-10'>
         <div className="flex flex-col justify-center items-center text-center pt-10  md:pt-16 px-4 mb-7">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">Friends to keep close in your life </h2>
@@ -82,7 +85,7 @@ const Home=()=>
       </div>
     </div>
 
-
+<Footer/>
 
 
 

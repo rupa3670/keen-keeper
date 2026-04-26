@@ -3,6 +3,8 @@ import { useTimeline } from '@/context/TimelineContext';
 import React, { useState } from 'react';
 import TimelineIcon from './TimelineIcon';
 import { ChevronDown } from 'lucide-react';
+import Navbar from '@/components/shared/navbar/Navbar';
+import Footer from '@/components/shared/Footer';
 
 
 const Filters = ["All", "Call", "Text", "Video"];
@@ -14,6 +16,8 @@ const TimelinePage = () => {
     const filteredEvents = filter === "All" ? events : events.filter(event => event.type === filter);
 
     return (
+        <>
+        <Navbar/>
         <div className=' bg-gray-100 py-12 px-4' >
             <div className='max-w-3xl mx-auto'>
 
@@ -59,6 +63,8 @@ const TimelinePage = () => {
 
             </div>
         </div>
+        <Footer/>
+        </>
     );
 };
 
