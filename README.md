@@ -1,4 +1,4 @@
-import { LayoutDashboard,UserCheck,ChartPie } from 'lucide-react';
+
 <h1 className='text-3xl font-bold'>Keen<span className='text-green-950'>Keeper</span></h1>
 
 <p className=''>Never lost touch with the people who matter most.<br> Log interactions, set contact goals, and stay connected  effortlessly</p>
